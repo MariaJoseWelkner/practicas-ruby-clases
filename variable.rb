@@ -8,3 +8,7 @@ precio_mx=770
 
 conversion= precio_dolar * precio_mx 
 puts conversion
+texto_saludo="Hola desde Mexico"
+puts texto_saludo
+puts "Hasta el proximo codigo"
+
