@@ -17,16 +17,22 @@ print "********Bienvenidos al juego piedra, papel o tijera **********"
 puts "-----------------------------------------"
 print "Escribe tu cachipum"
 # print significa imprimir de manera secuencial (info hacia el lado como parrafo)
-# el put imprime por salto de linea
-eleccion_usuario = gets.chomp 
-
+# el put imprime por salto de linea 
+eleccion_usuario = gets.chomp.downcase
 if eleccion_usuario == eleccion_maquina
     puts "Empate"
-elsif eleccion_usuario == "tijera" && eleccion_maquina == "pedra"
+elsif eleccion_usuario == "tijera"  && eleccion_maquina == "piedra"
     puts "perdiste"
-elsif eleccion_usuario == "piedra" && eleccion_maquina == "tijera"
+elsif  eleccion_usuario == "piedra"  && eleccion_maquina == "tijera"
+      puts "ganaste"
+elsif   eleccion_usuario == "papel"  && eleccion_maquina == "piedra"
+    puts "ganaste"
+elsif   eleccion_usuario == "piedra"  && eleccion_maquina == "papel"
+    puts "perdiste"
+elsif   eleccion_usuario == "papel"  && eleccion_maquina == "tijera"
+    puts "perdiste"
+elsif   eleccion_usuario == "tijera"  && eleccion_maquina == "papel"
     puts "ganaste"
 else
-    puts "Escribe por favor piedra, papel o tijera"
+    puts "Escribe por favor piedra,papel o tijera"
 end
-
