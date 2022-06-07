@@ -15,10 +15,12 @@ end
 puts "----------------------------------------"
 print "********Bienvenidos al juego piedra, papel o tijera **********"
 puts "-----------------------------------------"
-print "Escribe tu cachipum"
+print "Escribe tu cachipum: "
 # print significa imprimir de manera secuencial (info hacia el lado como parrafo)
 # el put imprime por salto de linea 
+
 eleccion_usuario = gets.chomp.downcase
+
 if eleccion_usuario == eleccion_maquina
     puts "Empate"
 elsif eleccion_usuario == "tijera"  && eleccion_maquina == "piedra"
