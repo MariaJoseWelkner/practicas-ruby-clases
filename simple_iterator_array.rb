@@ -13,3 +13,4 @@ puts suma2
 # b.each do |j|
 #     suma2 = suma2 + j 
 # end 
+
