@@ -9,7 +9,3 @@ n = 10
 end
 
 
-# n.times do
-#     print "*."
-# end
-
