@@ -12,7 +12,7 @@ print arregloString.reverse
 puts ''
 puts "Arreglo desordenado"
 puts arregloInt.shuffle
-# si yo le agrego ! shuffle! me lo baraja una vez y despues ese cambio lo deja fijo de manera permanente
+# si yo le agrego ! shuffle! me lo baraja una vez y despues ese cambio lo deja fijo de manera permanente, es decir me cambia el orden original
 puts arregloString.shuffle
 # shuffle es para que revuelva el orden
 puts arregloInt.include?(777)
