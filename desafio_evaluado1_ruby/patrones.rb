@@ -142,6 +142,27 @@ def numero_cero(n)
     return 
 end
 
+# def navidad(n)
+#     n = n.to_i
+#     counter = 0
+#     (1..n).each do |i|
+#         str = ""
+#         if i <= (n/2 + (n/2)%2)
+#             (1..n).each do |j|
+#                 if counter % (n + 1) == n / 2 || (counter % (n + 1) == (n / 2) - 2 && counter > (n - 1) * 1) || (counter % (n + 1) == ((n / 2) - 4) && counter > ((n - 1) * 1))
+#                     str += '*'
+#                 else
+#                     str += ' '
+#                 end
+#                 counter += 1
+#             end
+#             puts str
+#         else
+#             puts str
+#         end
+#     end
+# end
+
 def navidad(n)
     n = n.to_i
     counter = 0
@@ -149,7 +170,7 @@ def navidad(n)
         str = ""
         if i <= (n/2 + (n/2)%2)
             (1..n).each do |j|
-                if counter % (n + 1) == n / 2 || (counter % (n + 1) == (n / 2) - 2 && counter > (n - 1) * 1) || (counter % (n + 1) == ((n / 2) - 4) && counter > ((n - 1) * 1))
+                if counter % 2 == 1 && j > (n/2 + (n/2)%2 - i) && j < (n/2 + (n/2)%2 + i)
                     str += '*'
                 else
                     str += ' '
@@ -164,4 +185,4 @@ def navidad(n)
 end
 
 
-navidad(7)
+navidad(21)
